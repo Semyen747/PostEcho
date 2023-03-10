@@ -8,7 +8,7 @@ public class PostmanApiTest {
     void shouldReturnQueryAndGetQuery() {
         given()
                 .baseUri("https://postman-echo.com")
-                .body("HI")
+                .body("HELLO")
                 .when()
                 .post("/post")
                 .then()
@@ -23,7 +23,7 @@ public class PostmanApiTest {
         given()
                 .baseUri("https://postman-echo.com")
                 .contentType("text/plain; charset=UTF-8")
-                .body("ку")
+                .body("привет")
                 .when()
                 .post("/post")
                 .then()
